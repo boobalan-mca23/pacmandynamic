@@ -11,7 +11,7 @@ function add_img(){
     let yvel=(Math.floor(Math.random()*20))
     var pacman=document.createElement("img")
     document.getElementById("container").appendChild(pacman)
-    pacman.src="./images/PacMan1.png"
+    pacman.src="images/PacMan1.png"
     pacman.style.width=50+"px" 
     pacmen.push(pacman)//pacmen
     x_pos.push(xpos)//storing the x position in array
@@ -34,18 +34,18 @@ function move(){
     y_pos[i]+=y_vel[i]
     if(x_vel[i]>0){
         if((Math.floor(x_pos[i]/x_vel[i]))%2!==0){
-        pacmen[i].src="/images/PacMan2.png"
+        pacmen[i].src="images/PacMan2.png"
        }
        else{
-        pacmen[i].src="/images/PacMan1.png"
+        pacmen[i].src="images/PacMan1.png"
          }
     }
     else{
         if((Math.floor(x_pos[i]/x_vel[i]))%2!==0){
-            pacmen[i].src="/images/PacMan4.png"
+            pacmen[i].src="images/PacMan4.png"
         }
         else{
-            pacmen[i].src="/images/PacMan3.png"
+            pacmen[i].src="images/PacMan3.png"
         }
     }
 
